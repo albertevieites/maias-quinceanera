@@ -1,13 +1,15 @@
 import React from "react";
-import styles from "../styles/styles.scss";
 
-const Homepage = () => {
+import Layout from "../components/layout";
+
+const HomePage = () => {
   return (
-    <div className="test">
-      <h1>MAIA'S QUINCEAÑERA</h1>
-      <p>How are you guys?</p>
-    </div>
+    <>
+      <Layout pageHeading="Welcome to my home!" pageTitle="Home">
+        Get in to enjoy with everyone 🧑‍🤝‍🧑
+      </Layout>
+    </>
   );
 };
 
-export default Homepage;
+export default HomePage;
