@@ -7,17 +7,6 @@ import Map from "../components/Map";
 const HomePage = () => {
   return (
     <Layout>
-      <nav className="navbar">
-        <div className="navbar">
-          <ul>
-            <li>What is it?</li>
-            <li>The Plan</li>
-            <li>Venue Details</li>
-            <li>RSVP</li>
-          </ul>
-        </div>
-      </nav>
-
       <section className="hero">
         <div className="hero__title">
           <h1>Maia's</h1>
@@ -81,7 +70,7 @@ const HomePage = () => {
 
       <section id="venue" className="venue">
         <h3>The Venue</h3>
-        <Map></Map>
+        <Map />
         <p>The party will be at Priory Park Club (Kew) Ltd.</p>
         <p>Address:</p>
         <p>Riverside, 92 Forest Road</p>
