@@ -16,7 +16,7 @@ body {
 
   h1 {
     padding-bottom: 0.7em;
-    font-family: 'Great Vibes', cursive;
+    font-family: "Great Vibes", cursive;
     font-size: $f-s-3000;
   }
 
@@ -31,13 +31,13 @@ body {
     padding-top: 2em;
     padding-bottom: 3em;
 
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     span {
       width: 20vw;
-      padding: .7em 0;
+      padding: 0.7em 0;
 
       font-size: $f-s-500;
-      color: $clr-white;
+      color: $clr-dark;
       text-align: center;
 
       background-color: $clr-primary-dark;
@@ -61,7 +61,7 @@ body {
     border: 0.1em solid $clr-dark;
     background-color: $clr-secondary;
 
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: $f-s-500;
     color: $clr-dark;
 
@@ -72,18 +72,16 @@ body {
 }
 
 .whats {
-  display: flex;
-
-  background-color: $clr-white;
-
   padding: 5em 0;
+  background-color: $clr-white;
   border-bottom: 0.1em solid $clr-dark;
+
   h3 {
     width: 4em;
     padding-bottom: 0.1em;
     border-bottom: 0.1rem solid $clr-dark;
 
-    font-family: 'Great Vibes', cursive;
+    font-family: "Great Vibes", cursive;
     font-size: $f-s-1000;
   }
 
@@ -91,14 +89,120 @@ body {
     padding-top: 2em;
   }
 
+  &__container {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+  }
+
   &__text {
     width: 40%;
-    margin-left: 5em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
 
   &__images {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
     width: 40%;
+    &--central {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+  }
+}
+
+.plan {
+  margin: 0 auto;
+  padding: 5em 0;
+  border-bottom: 0.1em solid $clr-dark;
+
+  h3 {
+    width: 3.2em;
+    padding-bottom: 0.1em;
+    border-bottom: 0.1rem solid $clr-dark;
+
+    font-family: "Great Vibes", cursive;
+    font-size: $f-s-1000;
   }
 
+  &__container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &__details {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+
+    padding-top: 2em;
+
+    font-family: 'Montserrat', sans-serif;
+
+    h4 {
+      font-size: $f-s-500;
+      font-weight: $f-w-600;
+    }
+
+    &--left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 6em;
+
+      width: 40%;
+    }
+    &--line {
+      border-left: 0.1em solid $clr-dark;
+    }
+    &--right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 6em;
+
+      width: 40%;
+
+      span {
+        font-family: "Great Vibes", cursive;
+        font-size: $f-s-800;
+      }
+    }
+    &--last-span {
+      padding-top: 1em;
+    }
+  }
+}
+
+.venue {
+  margin: 0 auto;
+  padding: 5em 0;
+  background-color: $clr-white;
+  border-bottom: 0.1em solid $clr-dark;
+
+  h3 {
+    width: 4.2em;
+    padding-bottom: 0.1em;
+    border-bottom: 0.1rem solid $clr-dark;
+
+    font-family: "Great Vibes", cursive;
+    font-size: $f-s-1000;
+  }
+
+  &__container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &__content {
+    display: flex;
+
+    padding-top: 2em;
+
+    font-family: 'Montserrat', sans-serif;
+  }
 }
