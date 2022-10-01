@@ -20,7 +20,6 @@ const Map = () => {
         mapContainerStyle={{width: '30%', height: '30%'}}
         mapContainerClassName="map-container"
       >
-        <h1>{process.env.GATSBY_GOOGLE_MAPS_API_KEY}</h1>
         <MarkerF position={center} />
       </GoogleMap>
     </div>
