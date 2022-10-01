@@ -1,0 +1,15 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/fonts" as *;
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 4em 0;
+
+  h3 {
+    font-family: "Great Vibes", cursive;
+    font-size: $f-s-800;
+  }
+}

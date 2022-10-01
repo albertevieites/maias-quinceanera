@@ -1,0 +1,58 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/fonts" as *;
+
+.rsvp {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $clr-secondary;
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+
+    width: 25vw;
+    padding: 1.2em 4em;
+    background-color: $clr-primary;
+    border: 0.1em solid $clr-dark;
+
+    input {
+      font-size: $f-s-500;
+      font-weight: $f-w-800;
+    }
+
+    img {
+      width: 4em;
+    }
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+
+  height: 80vh;
+
+  font-family: 'Montserrat', sans-serif;
+
+  h3 {
+    font-size: $f-s-500;
+    font-weight: $f-w-600;
+  }
+
+  .rsvp__name {
+    width: 25vw;
+    padding: 1.2em 4em;
+    background-color: $clr-secondary-dark;
+    border: 0.1em solid $clr-dark;
+  }
+}
+
+.footer {
+  margin-top: auto;
+  border-top: 0.1em solid $clr-dark;
+}
