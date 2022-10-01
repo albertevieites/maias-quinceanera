@@ -1,0 +1,20 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/fonts" as *;
+
+.navbar {
+  display: flex;
+  justify-content: center;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: $f-w-600;
+  color: $clr-dark;
+
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 90%;
+    padding: 2em 0;
+    border-bottom: 0.1em solid $clr-dark;
+  }
+}

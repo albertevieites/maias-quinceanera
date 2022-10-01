@@ -1,5 +1,8 @@
 import React from "react";
+import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
+
+import "../styles/style.scss";
 
 import Layout from "../components/Layout";
 import Map from "../components/Map";
@@ -7,17 +10,6 @@ import Map from "../components/Map";
 const HomePage = () => {
   return (
     <Layout>
-      <nav className="navbar">
-        <div className="navbar">
-          <ul>
-            <li>What is it?</li>
-            <li>The Plan</li>
-            <li>Venue Details</li>
-            <li>RSVP</li>
-          </ul>
-        </div>
-      </nav>
-
       <section className="hero">
         <div className="hero__title">
           <h1>Maia's</h1>
@@ -25,10 +17,10 @@ const HomePage = () => {
         </div>
         <div className="hero__date">
           <span>19th of November</span>
-          <span>Richmond</span>
+          <span>Kew, Richmond</span>
         </div>
         <div className="hero__button">
-          <input type="button" value="RSVP" />
+          <Link to="/rsvp">RSVP</Link>
         </div>
       </section>
 
@@ -56,7 +48,18 @@ const HomePage = () => {
           </p>
         </div>
 
-        <div className="whats__carrousel"></div>
+        <div className="whats__images">
+          <div className="whats__images--left">
+            <StaticImage src="../images/photos/smile.jpg"></StaticImage>
+          </div>
+          <div className="whats__images--central">
+            <StaticImage src="../images/photos/pink.jpg"></StaticImage>
+            <StaticImage src="../images/photos/blur.jpg"></StaticImage>
+          </div>
+          <div className="whats__images--right">
+            <StaticImage src="../images/photos/mirror.jpg"></StaticImage>
+          </div>
+        </div>
       </section>
 
       <section id="plan" className="plan">
@@ -64,16 +67,16 @@ const HomePage = () => {
         <div className="plan__left">
           <h4>We start the night</h4>
           <p>Come with your fav outfit</p>
-          <StaticImage src="../images/camera.png" alt="camera icon"></StaticImage>
+          <StaticImage src="../images/icons/camera.png" alt="camera icon"></StaticImage>
           <p>We will eat some food</p>
-          <StaticImage src="../images/dance.png" alt="camera icon"></StaticImage>
+          <StaticImage src="../images/icons/dance.png" alt="dance icon"></StaticImage>
           <h4>End of party</h4>
         </div>
         <div className="plan__right">
           <span>6:30 pm</span>
-          <StaticImage src="../images/dress.png" alt="camera icon"></StaticImage>
+          <StaticImage src="../images/icons/dress.png" alt="camera icon"></StaticImage>
           <p>We will have a chance to take some pictures</p>
-          <StaticImage src="../images/food.png" alt="camera icon"></StaticImage>
+          <StaticImage src="../images/icons/food.png" alt="camera icon"></StaticImage>
           <p>We will dance some latin tunes</p>
           <span>9:30 pm</span>
         </div>
@@ -81,7 +84,7 @@ const HomePage = () => {
 
       <section id="venue" className="venue">
         <h3>The Venue</h3>
-        <Map></Map>
+        <Map />
         <p>The party will be at Priory Park Club (Kew) Ltd.</p>
         <p>Address:</p>
         <p>Riverside, 92 Forest Road</p>
