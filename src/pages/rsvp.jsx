@@ -1,7 +1,7 @@
 import React from "react";
-import Footer from "../components/Footer";
 
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const Rsvp = () => {
   return (
@@ -22,8 +22,9 @@ const Rsvp = () => {
         />
 
         <div class="contact__data">
-          <label for="name"></label>
+          <label for="name">
           <input type="text" name="name" placeholder="Full Name" required />
+          </label>
         </div>
 
         <fieldset>

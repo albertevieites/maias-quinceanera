@@ -1,0 +1,104 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/fonts" as *;
+@use "../abstracts/typography" as *;
+
+body {
+  background-color: $clr-primary;
+
+  border: 0.1em solid $clr-dark;
+}
+
+.hero {
+  margin: 0 auto;
+  padding-top: 10em;
+  padding-bottom: 5em;
+  border-bottom: 0.1em solid $clr-dark;
+
+  h1 {
+    padding-bottom: 0.7em;
+    font-family: 'Great Vibes', cursive;
+    font-size: $f-s-3000;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__date {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 2em;
+    padding-bottom: 3em;
+
+    font-family: 'Montserrat', sans-serif;
+    span {
+      width: 20vw;
+      padding: .7em 0;
+
+      font-size: $f-s-500;
+      color: $clr-white;
+      text-align: center;
+
+      background-color: $clr-primary-dark;
+      border-top: 0.1em solid $clr-dark;
+      border-bottom: 0.1em solid $clr-dark;
+      border-right: 0.1em solid $clr-dark;
+    }
+
+    span:first-child {
+      border-left: 0.1em solid $clr-dark;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+
+    width: 20vw;
+    margin: 0 auto;
+    padding: 1em 0;
+    border: 0.1em solid $clr-dark;
+    background-color: $clr-secondary;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: $f-s-500;
+    color: $clr-dark;
+
+    a {
+      font-weight: $f-w-800;
+    }
+  }
+}
+
+.whats {
+  display: flex;
+
+  background-color: $clr-white;
+
+  padding: 5em 0;
+  border-bottom: 0.1em solid $clr-dark;
+  h3 {
+    width: 4em;
+    padding-bottom: 0.1em;
+    border-bottom: 0.1rem solid $clr-dark;
+
+    font-family: 'Great Vibes', cursive;
+    font-size: $f-s-1000;
+  }
+
+  p {
+    padding-top: 2em;
+  }
+
+  &__text {
+    width: 40%;
+    margin-left: 5em;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  &__images {
+    width: 40%;
+  }
+
+}
