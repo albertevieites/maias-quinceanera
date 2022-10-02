@@ -5,16 +5,17 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: $clr-secondary;
+
+  background-color: $clr-white;
 
   &__button {
     display: flex;
     justify-content: center;
     gap: 1em;
 
-    width: 25vw;
+    width: 30vw;
     padding: 1.2em 4em;
-    background-color: $clr-primary;
+    background-color: $clr-secondary;
     border: 0.1em solid $clr-dark;
 
     input {
@@ -45,9 +46,9 @@ form {
   }
 
   .rsvp__name {
-    width: 25vw;
+    width: 26vw;
     padding: 1.2em 4em;
-    background-color: $clr-secondary-dark;
+    background-color: $clr-white;
     border: 0.1em solid $clr-dark;
   }
 }

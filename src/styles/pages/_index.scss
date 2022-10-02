@@ -4,13 +4,11 @@
 
 body {
   background-color: $clr-primary;
-
-  border: 0.1em solid $clr-dark;
 }
 
 .hero {
   margin: 0 auto;
-  padding-top: 10em;
+  padding-top: 15em;
   padding-bottom: 5em;
   border-bottom: 0.1em solid $clr-dark;
 
@@ -30,7 +28,7 @@ body {
 
     padding-top: 2em;
     padding-bottom: 3em;
-    
+
     font-family: "Montserrat", sans-serif;
     span {
       width: 20vw;
@@ -182,7 +180,6 @@ body {
   margin: 0 auto;
   padding: 5em 0;
   background-color: $clr-white;
-  border-bottom: 0.1em solid $clr-dark;
 
   h3 {
     width: 4.2em;
