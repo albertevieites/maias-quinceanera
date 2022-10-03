@@ -6,12 +6,20 @@
   justify-content: center;
   align-items: center;
 
-  background-color: $clr-primary;
+  position: fixed;
+  position:relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 
-  padding: 4em 0;
+
+  padding: 3em 0;
+
+  margin-top: auto;
+  border-top: 0.1em solid $clr-dark;
 
   h3 {
     font-family: "Great Vibes", cursive;
-    font-size: $f-s-800;
+    font-size: $f-s-700;
   }
 }

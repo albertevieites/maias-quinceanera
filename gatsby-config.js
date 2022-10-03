@@ -5,9 +5,17 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Maia's Quinceañera`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://maias-quinceanera.vercel.app/`,
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/,
+        }
+      }
+    },
     "gatsby-plugin-sass",
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",

@@ -19,9 +19,9 @@ const HomePage = () => {
           <span>19th of November</span>
           <span>Kew, Richmond</span>
         </div>
-        <div className="hero__button">
-          <Link to="/rsvp">RSVP</Link>
-        </div>
+        <Link className="hero__button" to="/rsvp">
+          RSVP
+        </Link>
       </section>
 
       <section id="whats" className="whats">
@@ -29,22 +29,22 @@ const HomePage = () => {
           <div className="whats__text">
             <h3>What is it?</h3>
             <p>
-              This birthday is celebrated differently from any other as it marks
-              the transition from childhood to young womanhood. Historically, in
-              the years prior to their 15th birthdays, girls were taught cooking,
-              weaving, and about childbearing by the elder women in their
-              communities in preparation for their future roles as wives and
-              during the celebration the girl's father would present her to
-              potential suitors.
+              The "Quinceañera" tradition comes from Mexico in the XIX century.
+              Wealthy parents would host a quinceañera party to introduce their
+              15-year old daughter to other "high society" families, with the
+              intention to arrange a marriage.
             </p>
             <p>
-              But today "quinceañera" party is a celebration for turning 15 years
-              old in Latinamerican countries.
+              With time, this tradition extended to other Latinamerican
+              countries, including Venezuela where half my family is from. But
+              today the quinceañera is just an opportunity to celebrate turning
+              15 years old with family and friends - nothing to do with finding
+              a husband!
             </p>
             <p>
               <span>
-                I would love for you to join me at my quinceañera, to party
-                venezuelan style!
+                I would love for you to join me at my quinceañera party. Read on
+                for more details!
               </span>
             </p>
           </div>
@@ -57,7 +57,10 @@ const HomePage = () => {
               <StaticImage src="../images/photos/blur.jpg" alt="blur image" />
             </div>
             <div className="whats__images--right">
-              <StaticImage src="../images/photos/mirror.jpg" alt="mirror image" />
+              <StaticImage
+                src="../images/photos/mirror.jpg"
+                alt="mirror image"
+              />
             </div>
           </div>
         </div>
@@ -70,17 +73,29 @@ const HomePage = () => {
             <div className="plan__details--left">
               <h4>We start the night</h4>
               <p>Come with your fav outfit</p>
-              <StaticImage src="../images/icons/camera.png" alt="camera icon"></StaticImage>
+              <StaticImage
+                src="../images/icons/camera.png"
+                alt="camera icon"
+              ></StaticImage>
               <p>We will eat some food</p>
-              <StaticImage src="../images/icons/dance.png" alt="dance icon"></StaticImage>
+              <StaticImage
+                src="../images/icons/dance.png"
+                alt="dance icon"
+              ></StaticImage>
               <h4>End of party</h4>
             </div>
             <div className="plan__details--line"></div>
             <div className="plan__details--right">
               <span>6:30 pm</span>
-              <StaticImage src="../images/icons/dress.png" alt="camera icon"></StaticImage>
+              <StaticImage
+                src="../images/icons/dress.png"
+                alt="camera icon"
+              ></StaticImage>
               <p>We will have a chance to take some pictures</p>
-              <StaticImage src="../images/icons/food.png" alt="camera icon"></StaticImage>
+              <StaticImage
+                src="../images/icons/food.png"
+                alt="camera icon"
+              ></StaticImage>
               <p>We will dance some latin tunes</p>
               <span className="plan__details--last-span">9:30 pm</span>
             </div>
@@ -94,10 +109,13 @@ const HomePage = () => {
           <div className="venue__content">
             <Map className="venue__map" />
             <div className="venue__text">
-              <p>The party will be at Priory Park Club (Kew) Ltd.</p>
-              <p>Address:</p>
+              <p>
+                The party will be at <span>Priory Park Club (Kew) Ltd</span>.
+              </p>
               <p>Riverside, 92 Forest Road</p>
-              <p>Richmond, Surrey, TW9 3BZ</p>
+              <p>
+                Richmond, Surrey, <span>TW9 3BZ</span>
+              </p>
             </div>
           </div>
         </div>
