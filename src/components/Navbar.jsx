@@ -6,10 +6,8 @@ import { useScrollPosition } from "../hooks/useScrollPosition";
 
 const Navbar = () => {
   const { pathname } = useLocation();
-  console.log(pathname);
 
   const scrollPosition = useScrollPosition();
-  console.log(scrollPosition);
 
   return (
     <div>

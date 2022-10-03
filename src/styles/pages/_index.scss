@@ -1,6 +1,13 @@
 @use "../abstracts/colors" as *;
 @use "../abstracts/fonts" as *;
 @use "../abstracts/typography" as *;
+@use "../abstracts/mixins" as *;
+
+.navbar {
+  @include tablet {
+    display: none;
+  }
+}
 
 .hero {
   margin: 0 auto;
@@ -10,10 +17,18 @@
 
   background-color: $clr-primary;
 
+  @include tablet {
+    padding-top: 10em;
+  }
+
   h1 {
     padding-bottom: 0.7em;
     font-family: "Great Vibes", cursive;
     font-size: $f-s-3000;
+
+    @include tablet {
+      font-size: $f-s-2000;
+    }
   }
 
   &__title {
@@ -24,10 +39,17 @@
     display: flex;
     justify-content: center;
 
+    max-width: 40em;
+    margin: 0 auto;
     padding-top: 2em;
     padding-bottom: 3em;
 
     font-family: "Montserrat", sans-serif;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+    }
     span {
       width: 20vw;
       padding: 0.7em 0;
@@ -38,6 +60,16 @@
 
       border-top: 0.1em solid $clr-dark;
       border-bottom: 0.1em solid $clr-dark;
+
+      @include tablet {
+        width: 40vw;
+      }
+    }
+
+    span:first-child {
+      @include tablet {
+        border-bottom: 0;
+      }
     }
   }
 
@@ -45,6 +77,7 @@
     display: flex;
     justify-content: center;
 
+    max-width: 15em;
     width: 20vw;
     margin: 0 auto;
     padding: 1em 0;
@@ -57,6 +90,10 @@
     color: $clr-dark;
 
     transition: background 0.6s ease;
+
+    @include tablet {
+      width: 70vw;
+    }
 
     &:hover {
       background: $clr-primary;
@@ -90,13 +127,25 @@
 
   &__container {
     display: flex;
-    justify-content: center;
-    gap: 2em;
+    justify-content: space-between;
+
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+
+    @include tablet {
+      flex-direction: column;
+      gap: 2em;
+    }
   }
 
   &__text {
     width: 40%;
     font-family: "Montserrat", sans-serif;
+
+    @include tablet {
+      width: 100%;
+    }
   }
 
   &__images {
@@ -104,11 +153,20 @@
     align-items: center;
     gap: 1em;
 
-    width: 40%;
+    width: 50%;
+
+    @include tablet {
+      width: 100%;
+    }
+
     &--central {
       display: flex;
       flex-direction: column;
       gap: 1em;
+
+      @include tablet {
+        display: none;
+      }
     }
   }
 }
@@ -130,8 +188,13 @@
   }
 
   &__container {
+    max-width: 1200px;
     width: 80%;
     margin: 0 auto;
+
+    @include tablet {
+      display: none;
+    }
   }
 
   &__details {
@@ -177,6 +240,38 @@
       padding-top: 0.8em;
     }
   }
+
+  &__mobile {
+    display: none;
+    justify-content: center;
+
+    font-family: 'Montserrat', sans-serif;
+
+    h4 {
+      font-size: $f-s-500;
+      font-weight: $f-w-600;
+    }
+
+    span {
+      font-family: "Great Vibes", cursive;
+      font-size: $f-s-600;
+    }
+
+    svg {
+      width: 10%;
+    }
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &--start {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
 
 .venue {
@@ -194,6 +289,7 @@
   }
 
   &__container {
+    max-width: 1200px;
     width: 80%;
     margin: 0 auto;
   }
@@ -205,6 +301,18 @@
     padding-top: 2em;
 
     font-family: "Montserrat", sans-serif;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__map {
+    width: 50%;
+
+    @include tablet {
+      width: 100%;
+    }
   }
 
   &__text {
@@ -213,7 +321,13 @@
     justify-content: flex-end;
     gap: 1em;
 
+    width: 40%;
+
     font-family: 'Montserrat', sans-serif;
+
+    @include tablet {
+      width: 100%;
+    }
 
     span {
       font-weight: 600;
@@ -222,6 +336,10 @@
     p:first-child {
       padding-bottom: 2em;
       font-size: $f-s-480;
+
+      @include tablet {
+        padding-top: 5em;
+      }
     }
   }
 }
