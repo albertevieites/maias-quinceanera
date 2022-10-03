@@ -9,12 +9,12 @@ const Rsvp = () => {
       <Layout>
       <div className="rsvp__container">
         <form
-          name="rsvp maia"
+          name="contact v1"
           method="POST"
           data-netlify="true"
           onSubmit="submit"
         >
-          <input type="hidden" name="form-name" value="Contact" />
+
           <div className="rsvp__top">
             <h3>Please fill one per person</h3>
             <div className="rsvp__name">
