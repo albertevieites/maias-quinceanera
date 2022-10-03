@@ -1,5 +1,6 @@
 @use "../abstracts/colors" as *;
 @use "../abstracts/fonts" as *;
+@use "../abstracts/mixins" as *;
 
 .navbar {
   display: flex;
@@ -14,6 +15,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: $f-w-600;
   color: $clr-dark;
+
 
   &__list {
     display: flex;

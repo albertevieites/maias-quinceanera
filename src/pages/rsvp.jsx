@@ -25,9 +25,9 @@ const Rsvp = () => {
           <div className="rsvp__bottom">
             <h3>Please select one</h3>
             <fieldset>
-                <input type="radio" name="radio" value="yes" /> I'm coming
+                <input type="radio" name="attendance" value="Attending" /> I'm coming
 
-                <input type="radio" name="radio" value="no" /> Sorry, I cannot make it
+                <input type="radio" name="attendance" value="Not Attending" /> Sorry, I cannot make it
             </fieldset>
           </div>
 
