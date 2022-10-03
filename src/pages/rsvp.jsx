@@ -9,16 +9,15 @@ const Rsvp = () => {
       <Layout>
       <div className="rsvp__container">
         <form
-          name="contact v1"
+          name="form"
+          action="https://getform.io/f/82cc76f6-4272-48f1-ae26-9c9f48c7ee92"
           method="POST"
-          data-netlify="true"
-          onSubmit="submit"
         >
 
           <div className="rsvp__top">
             <h3>Please fill one per person</h3>
             <div className="rsvp__name">
-              <input type="text" name="name" placeholder="Your Name" required />
+              <input type="text" name="name" placeholder="Full Name" required />
             </div>
           </div>
 
