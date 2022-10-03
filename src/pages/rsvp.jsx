@@ -33,7 +33,7 @@ const Rsvp = () => {
 
           <div class="rsvp__button">
             <Finger />
-            <input type="submit" value="Let me know!" />
+            <button type="submit" >Let me know!</button>
           </div>
         </form>
       </div>
