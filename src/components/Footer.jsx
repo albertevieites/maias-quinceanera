@@ -9,12 +9,12 @@ const Footer = () => {
       className="footer"
       style={
         pathname === "/"
-          ? { backgroundColor: "hsl(339, 81%, 85%", position: "relative" }
+          ? { backgroundColor: "hsl(339, 81%, 85%" }
           : { backgroundColor: "hsl(177, 100%, 34%", position: "fixed" }
       }
     >
       <footer>
-        <h3>Made in London</h3>
+        <h3>Made by Alberte</h3>
       </footer>
     </div>
   );

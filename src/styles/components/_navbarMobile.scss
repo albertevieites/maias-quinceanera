@@ -14,7 +14,7 @@
     z-index: 20;
 
     width: 100%;
-    border-bottom: 0.1em solid $clr-dark;
+    border-bottom: 0.1rem solid $clr-dark;
     background-color: $clr-secondary;
 
     font-family: "Montserrat", sans-serif;
@@ -25,6 +25,10 @@
     a {
       padding: 1em 0;
       transition: all 300ms;
+
+      &:hover {
+        color: $clr-white;
+      }
     }
   }
 }
