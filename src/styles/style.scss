@@ -2,3 +2,8 @@
 @use "./components";
 @use "./pages/index";
 @use "./pages/rsvp";
+
+.leaflet-container {
+  width: 100vw;
+  height: 100vh;
+}

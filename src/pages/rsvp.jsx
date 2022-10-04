@@ -1,6 +1,7 @@
 import React /* { useEffect }  */from "react";
 
 import Layout from "../components/Layout";
+import NavbarMobile from "../components/NavbarMobile";
 import Finger from "../images/assets/finger.svg";
 
 const Rsvp = () => {
@@ -10,6 +11,7 @@ const Rsvp = () => {
 
   return (
     <div className="rsvp">
+      <NavbarMobile />
       <Layout>
       <div className="rsvp__container">
         <form
