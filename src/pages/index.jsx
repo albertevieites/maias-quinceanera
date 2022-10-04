@@ -6,7 +6,6 @@ import "../styles/style.scss";
 
 import Layout from "../components/Layout";
 import Map from "../components/Map";
-import { GiBeveledStar } from "react-icons/gi";
 
 const HomePage = () => {
   return (
@@ -72,69 +71,105 @@ const HomePage = () => {
           <h3>The plan</h3>
           <div className="plan__details">
             <div className="plan__details--left">
-              <h4>We start the night</h4>
-              <p>Come with your fav outfit</p>
-              <StaticImage
-                src="../images/icons/camera.png"
-                alt="camera icon"
-              ></StaticImage>
-              <p>We will eat some food</p>
-              <StaticImage
-                src="../images/icons/dance.png"
-                alt="dance icon"
-              ></StaticImage>
-              <h4>End of party</h4>
+              <div className="plan__heading">
+                <h4>We start the night</h4>
+              </div>
+              <div className="plan__paragraph">
+                <p>Come with your fav outfit</p>
+              </div>
+              <div className="plan__image">
+                <StaticImage
+                  src="../images/icons/camera.png"
+                  alt="camera icon"
+                ></StaticImage>
+              </div>
+              <div className="plan__paragraph">
+                <p>We will eat some food</p>
+              </div>
+              <div className="plan__paragraph">
+                <div className="plan__image">
+                  <StaticImage
+                    src="../images/icons/dance.png"
+                    alt="dance icon"
+                  ></StaticImage>
+                </div>
+              </div>
+              <div className="plan__heading">
+                <h4>End of party</h4>
+              </div>
             </div>
+
             <div className="plan__details--line"></div>
+
             <div className="plan__details--right">
-              <span>6:30 pm</span>
+              <div className="plan__span">
+                <span>6:30 pm</span>
+              </div>
               <StaticImage
                 src="../images/icons/dress.png"
                 alt="camera icon"
+                className="photo"
               ></StaticImage>
-              <p>We will have a chance to take some pictures</p>
+              <div className="plan__paragraph">
+                <p>We will have a chance to take some pictures</p>
+              </div>
               <StaticImage
                 src="../images/icons/food.png"
                 alt="camera icon"
+                className="photo"
               ></StaticImage>
-              <p>We will dance some latin tunes</p>
+              <div className="plan__paragraph">
+                <p>We will dance some latin tunes</p>
+              </div>
               <span className="plan__details--last-span">9:30 pm</span>
             </div>
           </div>
         </div>
 
         <div className="plan__mobile">
+          <h3>The plan</h3>
           <div className="plan__mobile--container">
-            <h3>The plan</h3>
             <div className="plan__mobile--start">
               <h4>We start the night</h4>
-              <GiBeveledStar />
               <span>6:30 pm</span>
             </div>
-            <div>
+
+            <div className="plan__mobile--dress">
               <p>Come with your fav outfit</p>
               <StaticImage
                 src="../images/icons/dress.png"
                 alt="camera icon"
               ></StaticImage>
             </div>
-            <StaticImage
-              src="../images/icons/camera.png"
-              alt="camera icon"
-            ></StaticImage>
-            <p>We will eat some food</p>
-            <StaticImage
-              src="../images/icons/dance.png"
-              alt="dance icon"
-            ></StaticImage>
-            <h4>End of party</h4>
-            <p>We will have a chance to take some pictures</p>
-            <StaticImage
-              src="../images/icons/food.png"
-              alt="camera icon"
-            ></StaticImage>
-            <p>We will dance some latin tunes</p>
-            <span className="plan__details--last-span">9:30 pm</span>
+
+            <div className="plan__mobile--camera">
+              <StaticImage
+                src="../images/icons/camera.png"
+                alt="camera icon"
+              ></StaticImage>
+              <p>We will have a chance to take some pictures</p>
+            </div>
+
+            <div className="plan__mobile--food">
+              <p>We will eat some food</p>
+              <StaticImage
+                src="../images/icons/food.png"
+                alt="camera icon"
+              ></StaticImage>
+            </div>
+
+            <div className="plan__mobile--dance">
+              <StaticImage
+                src="../images/icons/dance.png"
+                alt="dance icon"
+              ></StaticImage>
+              <p>We will dance some latin tunes</p>
+            </div>
+
+            <div className="plan__mobile--end">
+              <h4>End of party</h4>
+              <span className="plan__details--last-span">9:30 pm</span>
+            </div>
           </div>
         </div>
       </section>

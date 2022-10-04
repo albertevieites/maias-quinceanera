@@ -21,27 +21,37 @@ const Navbar = () => {
       >
         <ul
           className="navbar__list"
-          style={
-            pathname === "/"
-              ? { width: "90%" }
-              : { width: "100%" }
-          }
+          style={pathname === "/" ? { width: "90%" } : { width: "100%" }}
         >
           <a href="#whats">
             <div>
-              <li>What is it?</li>
+              <li style={pathname === "/" ? { display: "block" } : { display: "none" }}>What is it?</li>
             </div>
           </a>
 
           <a href="#plan">
-            <li>The Plan</li>
+            <li style={pathname === "/" ? { display: "block" } : { display: "none" }}>The Plan</li>
           </a>
 
           <a href="#venue">
-            <li>Venue Details</li>
+            <li
+            style={pathname === "/" ? { display: "block" } : { display: "none" }}
+            >Venue Details</li>
           </a>
 
-          <Link to="/rsvp">RSVP</Link>
+          <Link to="/rsvp" style={pathname === "/" ? { display: "block" } : { display: "none" }}>RSVP</Link>
+
+          <span
+            className="navbar__home--link"
+            style={pathname === "/" ? { width: "0" } : { width: "100%"} }
+          >
+            <Link
+              to="/"
+              style={pathname === "/" ? { display: "none" } : { display: "block", width: "100%"} }
+            >
+            Home
+          </Link>
+          </span>
         </ul>
       </nav>
     </div>
