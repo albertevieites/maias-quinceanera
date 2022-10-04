@@ -1,5 +1,6 @@
 @use "../abstracts/colors" as *;
 @use "../abstracts/fonts" as *;
+@use "../abstracts/mixins" as *;
 
 .footer {
   display: flex;
@@ -13,10 +14,14 @@
   width: 100%;
 
 
-  padding: 3em 0;
+  padding: 2em 0;
 
   margin-top: auto;
   border-top: 0.1em solid $clr-dark;
+
+  @include mobile {
+    padding: 1.5em 0;
+  }
 
   h3 {
     font-family: "Montserrat", sans-serif;

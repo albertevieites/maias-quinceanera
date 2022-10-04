@@ -16,7 +16,6 @@
   font-weight: $f-w-600;
   color: $clr-dark;
 
-
   &__list {
     display: flex;
     justify-content: space-evenly;
@@ -34,5 +33,13 @@
     &:hover {
       color: $clr-secondary-dark;
     }
+
+    @include mobile {
+      padding: 1em 0;
+    }
+  }
+
+  &__home--link {
+      font-size: $f-s-700;
   }
 }

@@ -1,9 +1,13 @@
-import React from "react";
+import React /* { useEffect }  */from "react";
 
 import Layout from "../components/Layout";
 import Finger from "../images/assets/finger.svg";
 
 const Rsvp = () => {
+  /* useEffect(() => {
+    document.body.style.overflow = "hidden";
+  }, []) */
+
   return (
     <div className="rsvp">
       <Layout>
@@ -24,9 +28,9 @@ const Rsvp = () => {
           <div className="rsvp__bottom">
             <h3>Please select one</h3>
             <fieldset>
-                <input type="radio" name="attendance" value="Attending" /> I'm coming
+                <div className="rsvp__input"><input type="radio" name="attendance" value="Attending" /> I'm coming</div>
 
-                <input type="radio" name="attendance" value="Not Attending" /> Sorry, I cannot make it
+                <div className="rsvp__input"><input type="radio" name="attendance" value="Not Attending" /> Sorry, I cannot make it</div>
             </fieldset>
           </div>
 

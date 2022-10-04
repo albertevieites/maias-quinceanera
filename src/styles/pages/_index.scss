@@ -3,12 +3,6 @@
 @use "../abstracts/typography" as *;
 @use "../abstracts/mixins" as *;
 
-.navbar {
-  @include tablet {
-    display: none;
-  }
-}
-
 .hero {
   margin: 0 auto;
   padding-top: 15em;
@@ -200,44 +194,74 @@
   &__details {
     display: flex;
     justify-content: center;
-    gap: 4em;
+    align-items: center;
 
     padding-top: 2em;
 
     font-family: "Montserrat", sans-serif;
 
     h4 {
+      display: flex;
+      align-items: center;
+
       font-size: $f-s-500;
       font-weight: $f-w-600;
+
+      height: 10vh;
+    }
+
+    p {
+      display: flex;
+      align-items: center;
+
+      height: 10vh;
     }
 
     &--left {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      gap: 6em;
 
       width: 40%;
     }
+
     &--line {
-      border-left: 0.1em solid $clr-dark;
+      height: 50vh;
+      margin: 0 2.5em;
+      border-right: 0.1em solid $clr-dark;
     }
+
     &--right {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
-      gap: 6em;
 
       width: 40%;
 
+      p {
+        display: flex;
+        align-items: center;
+
+        padding-top: 2em;
+
+
+        height: 10vh;
+      }
+
+      .photo {
+        margin-top: 1em;
+      }
+
       span {
+        display: flex;
+        align-items: center;
+
+        height: 10vh;
+
         font-family: "Great Vibes", cursive;
         font-size: $f-s-800;
       }
-    }
-    &--last-span {
-      padding-top: 0.8em;
     }
   }
 
@@ -245,7 +269,7 @@
     display: none;
     justify-content: center;
 
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 
     h4 {
       font-size: $f-s-500;
@@ -264,12 +288,88 @@
     @include tablet {
       display: flex;
       flex-direction: column;
+
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    &--container {
+      display: flex;
+      flex-direction: column;
+      gap: 4em;
+
+      padding-top: 2em;
     }
 
     &--start {
       display: flex;
       justify-content: center;
       align-items: center;
+
+      h4 {
+        width: 50%;
+      }
+      span {
+        width: 50%;
+        text-align: end;
+      }
+    }
+
+    &--dress {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        padding-right: 2em;
+      }
+    }
+
+    &--camera {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        padding-left: 2em;
+      }
+    }
+
+    &--food {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        padding-right: 2em;
+      }
+    }
+
+    &--dance {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        padding-left: 2em;
+      }
+    }
+
+    &--end {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h4 {
+        width: 50%;
+      }
+
+      span {
+        width: 50%;
+        padding-top: 0;
+
+        text-align: end;
+      }
     }
   }
 }
@@ -323,7 +423,7 @@
 
     width: 40%;
 
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 
     @include tablet {
       width: 100%;

@@ -14,7 +14,7 @@ const Footer = () => {
       }
     >
       <footer>
-        <h3>Made by AV</h3>
+        <h3>Made in London</h3>
       </footer>
     </div>
   );
