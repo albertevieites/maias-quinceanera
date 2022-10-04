@@ -8,6 +8,7 @@ const Navbar = () => {
   const { pathname } = useLocation();
 
   const scrollPosition = useScrollPosition();
+  console.log(scrollPosition);
 
   return (
     <div>

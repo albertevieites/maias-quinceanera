@@ -16,7 +16,7 @@ const Rsvp = () => {
       <div className="rsvp__container">
         <form
           name="form"
-          action="https://getform.io/f/82cc76f6-4272-48f1-ae26-9c9f48c7ee92"
+          action="https://getform.io/f/d68028be-bc9d-45f5-8919-411979ae2a90"
           method="POST"
         >
 
