@@ -30,7 +30,14 @@
       font-family: "Great Vibes", cursive;
       letter-spacing: 0.2rem;
 
-      &:hover {
+      &:hover,
+      &:focus {
+        background-color: $clr-secondary;
+        color: $clr-white;
+      }
+
+      &:active {
+        background-color: $clr-secondary;
         color: $clr-white;
       }
     }
