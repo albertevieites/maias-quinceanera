@@ -30,12 +30,12 @@
       &:hover,
       &:focus {
         background-color: $clr-primary;
-        color: $clr-white;
+        color: $clr-secondary;
       }
 
       &:active {
-        background-color: $clr-secondary;
-        color: $clr-white;
+        background-color: $clr-primary;
+        color: $clr-secondary;
       }
     }
   }
