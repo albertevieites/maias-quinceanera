@@ -12,7 +12,7 @@
   background-color: $clr-primary;
 
   @include tablet {
-    padding-top: 10em;
+    padding-top: 7em;
   }
 
   h1 {
@@ -378,6 +378,10 @@
   margin: 0 auto;
   padding: 5em 0;
   background-color: $clr-white;
+
+  @include tablet {
+    padding-bottom: 10em;
+  }
 
   h3 {
     width: 4.2em;

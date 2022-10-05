@@ -1,0 +1,43 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/fonts" as *;
+@use "../abstracts/mixins" as *;
+
+.scroll {
+  display: none;
+
+  position: fixed;
+  bottom: 0;
+  z-index: 20;
+
+  width: 100%;
+
+  margin: 0 auto;
+
+  @include tablet {
+    display: block;
+  }
+
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 25%;
+  }
+
+  img {
+    width: 40%;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+    background-color: $clr-white;
+    border-top: 0.125em solid $clr-dark;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: $f-s-300;
+    font-weight: $f-w-300;
+  }
+}
