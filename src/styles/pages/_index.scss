@@ -12,6 +12,7 @@
   background-color: $clr-primary;
 
   @include tablet {
+    height: 90vh;
     padding-top: 7em;
   }
 
