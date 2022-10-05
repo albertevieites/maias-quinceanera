@@ -45,8 +45,9 @@
   }
 
   &__home--link {
-      font-size: $f-s-900;
-      font-family: "Great Vibes", cursive;
-      letter-spacing: 0.4rem;
+    font-family: "Great Vibes", cursive;
+      font-size: $f-s-1000;
+      font-weight: $f-w-400;
+      letter-spacing: 0.2rem;
   }
 }
