@@ -50,7 +50,7 @@ const Navbar = () => {
               to="/"
               style={pathname === "/" ? { display: "none" } : { display: "block", width: "100%"} }
             >
-            Home
+            Maia's Quinceañera
           </Link>
           </span>
         </ul>

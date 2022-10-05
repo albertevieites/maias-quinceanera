@@ -9,7 +9,7 @@ const NavbarMobile = () => {
       <nav className="navbar-mobile">
           <span>
             <Link to="/">
-              Home
+              Maia's Quinceañera
             </Link>
           </span>
       </nav>
