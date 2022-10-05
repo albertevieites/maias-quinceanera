@@ -9,8 +9,8 @@ const Footer = () => {
       className="footer"
       style={
         pathname === "/"
-          ? { backgroundColor: "hsl(339, 81%, 85%" }
-          : { backgroundColor: "hsl(339, 81%, 85%", position: "fixed" }
+          ? { }
+          : { position: "fixed" }
       }
     >
       <footer>

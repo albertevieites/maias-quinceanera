@@ -17,18 +17,15 @@
     border-bottom: 0.1rem solid $clr-dark;
     background-color: $clr-primary;
 
-    font-family: "Montserrat", sans-serif;
-    font-size: $f-s-640;
-    font-weight: $f-w-600;
+    font-family: "Great Vibes", cursive;
+    font-size: $f-s-800;
+    font-weight: $f-w-400;
+    letter-spacing: 0.2rem;
     color: $clr-dark;
 
     a {
       padding: 1em 0;
       transition: all 300ms;
-
-      font-size: $f-s-800;
-      font-family: "Great Vibes", cursive;
-      letter-spacing: 0.2rem;
 
       &:hover,
       &:focus {
