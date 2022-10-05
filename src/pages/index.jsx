@@ -182,13 +182,23 @@ const HomePage = () => {
               <Map />
             </div>
             <div className="venue__text">
-              <p>
-                The party will be at <span>Priory Park Club (Kew) Ltd</span>.
-              </p>
-              <p>Riverside, 92 Forest Road</p>
-              <p>
-                Richmond, Surrey, <span>TW9 3BZ</span>
-              </p>
+              <div className="venue__text--top">
+                <p>
+                  The party will be at
+                </p>
+                <p>
+                <span>Priory Park Club (Kew) Ltd</span>.
+                </p>
+              </div>
+
+              <div className="venue__text--bottom">
+                <p>
+                  Riverside, 92 Forest Road
+                  </p>
+                <p>
+                  Richmond, Surrey, TW9 3BZ
+                </p>
+              </div>
             </div>
           </div>
         </div>
