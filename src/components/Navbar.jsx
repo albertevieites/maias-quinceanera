@@ -3,6 +3,10 @@ import { useLocation } from "@reach/router";
 import { Link } from "gatsby";
 import { useScrollPosition } from "../hooks/useScrollPosition";
 
+const linkStyle = {
+  padding: "1em 0"
+};
+
 const Navbar = () => {
   const { pathname } = useLocation();
 
@@ -40,7 +44,7 @@ const Navbar = () => {
           >
             <Link
               to="/"
-              style={pathname === "/" ? { display: "none" } : { display: "block", width: "100%"} }
+              style={pathname === "/" ? { display: "none" } : { display: "block", width: "100%", padding: "1em" }}
             >
             Maia's Quinceañera
           </Link>
