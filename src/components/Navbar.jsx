@@ -1,6 +1,5 @@
 import React from "react";
 import { useLocation } from "@reach/router";
-
 import { Link } from "gatsby";
 import { useScrollPosition } from "../hooks/useScrollPosition";
 

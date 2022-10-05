@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Scroll from "./Scroll";
 
 const duration = 0.5;
 
@@ -51,6 +52,15 @@ const Layout = ({ children }) => {
           >
             {children}
           </motion.main>
+          <motion.div
+            key={location.pathname}
+            variants={variants}
+            initial="initial"
+            animate="enter"
+            exit="exit"
+          >
+            <Scroll />
+          </motion.div>
           <motion.div
             key={location.pathname}
             variants={variants}
