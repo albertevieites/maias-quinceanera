@@ -3,10 +3,6 @@ import { useLocation } from "@reach/router";
 import { Link } from "gatsby";
 import { useScrollPosition } from "../hooks/useScrollPosition";
 
-const linkStyle = {
-  padding: "1em 0"
-};
-
 const Navbar = () => {
   const { pathname } = useLocation();
 
