@@ -8,7 +8,7 @@
   justify-content: center;
   min-height: 100vh;
 
-  background-color: $clr-white;
+  background-color: $clr-primary;
 
   @include mobile {
     min-height: 100vh;
@@ -41,7 +41,7 @@
   &__name {
     max-width: 30em;
     padding: 1.2em 4em 1.2em 1em;
-    background-color: $clr-white;
+    background-color: $clr-primary-box;
     border: 0.1em solid $clr-dark;
   }
 
@@ -101,7 +101,7 @@
     width: 100%;
     margin: 0 auto;
 
-    background-color: $clr-primary;
+    background-color: $clr-secondary;
     border: 0.1em solid $clr-dark;
 
     button {

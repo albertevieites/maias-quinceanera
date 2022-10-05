@@ -11,14 +11,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav
-        className="navbar"
-        style={
-          pathname === "/"
-            ? { backgroundColor: "hsl(339, 81%, 85%" }
-            : { backgroundColor: "hsl(177, 100%, 34%)" }
-        }
-      >
+      <nav className="navbar">
         <ul
           className="navbar__list"
           style={pathname === "/" ? { width: "90%" } : { width: "100%" }}
