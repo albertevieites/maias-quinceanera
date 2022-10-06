@@ -3,6 +3,12 @@
 @use "../abstracts/typography" as *;
 @use "../abstracts/mixins" as *;
 
+html {
+
+  -webkit-tap-highlight-color: hsla(177, 100%, 34%, 20%);
+
+}
+
 .hero {
   margin: 0 auto;
   padding-top: 15em;
