@@ -130,12 +130,12 @@ const HomePage = () => {
           <h3>The plan</h3>
           <div className="plan__mobile--container">
             <div className="plan__mobile--start">
-              <h4>We start the night</h4>
+              <h4>Night starts</h4>
               <span>6:30 pm</span>
             </div>
 
             <div className="plan__mobile--dress">
-              <p>Come with your fav outfit</p>
+              <p>Wear your fav outfit</p>
               <StaticImage
                 src="../images/icons/dress.png"
                 alt="camera icon"
@@ -147,11 +147,11 @@ const HomePage = () => {
                 src="../images/icons/camera.png"
                 alt="camera icon"
               ></StaticImage>
-              <p>We will have a chance to take some pictures</p>
+              <p>Make some memories</p>
             </div>
 
             <div className="plan__mobile--food">
-              <p>We will eat some food</p>
+              <p>Eat some food</p>
               <StaticImage
                 src="../images/icons/food.png"
                 alt="camera icon"
@@ -163,7 +163,7 @@ const HomePage = () => {
                 src="../images/icons/dance.png"
                 alt="dance icon"
               ></StaticImage>
-              <p>We will dance some latin tunes</p>
+              <p>Party latin style</p>
             </div>
 
             <div className="plan__mobile--end">
