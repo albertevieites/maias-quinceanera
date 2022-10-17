@@ -1,13 +1,9 @@
 import React from "react";
 import { useLocation } from "@reach/router";
 import { Link } from "gatsby";
-import { useScrollPosition } from "../hooks/useScrollPosition";
 
 const Navbar = () => {
   const { pathname } = useLocation();
-
-  const scrollPosition = useScrollPosition();
-  console.log(scrollPosition);
 
   return (
     <div>
